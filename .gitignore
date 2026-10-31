@@ -1,0 +1,27 @@
+# Local runtime output and generated media
+outputs/
+output/
+results/
+report/
+reports/
+*.mp4
+*.mov
+*.png
+*.pdf
+*.docx
+*.zip
+*.log
+*.jsonl
+
+# Cache, build output, and local configuration
+__pycache__/
+*.py[cod]
+build/
+dist/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+credentials/
+secrets/

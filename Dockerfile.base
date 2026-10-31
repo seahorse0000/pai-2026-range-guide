@@ -1,0 +1,7 @@
+FROM ros:jazzy-ros-base
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ros-jazzy-ros-gz-sim ros-jazzy-ros-gz-bridge \
+    python3-colcon-common-extensions && rm -rf /var/lib/apt/lists/*
+WORKDIR /workspace/ros2_ws
+ENV PYTHONUNBUFFERED=1
+CMD ["bash"]
